@@ -17,7 +17,7 @@ class _ClustersPageState extends State<ClustersPage> {
 
   Future<void> fetchClusters() async {
     try {
-      final response = await Dio().get('http://localhost:8080/clusters/test');
+      final response = await Dio().post('http://localhost:8000/cluster_format');
       setState(() {
         clusters = response.data['clusters'];
       });
