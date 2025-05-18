@@ -1,18 +1,33 @@
 # logwatcher
 
-A new Flutter project.
+### Как запустить Flutter Web-приложение в тестовом режиме
 
-## Getting Started
+1. Убедитесь, что установлен Flutter SDK версии 2.0 или выше (поддержка Web встроена).
 
-This project is a starting point for a Flutter application.
+2. Проверьте, доступна ли поддержка Web:
 
-A few resources to get you started if this is your first Flutter project:
+   ```bash
+   flutter devices
+   ```
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+   В списке устройств должно быть хотя бы одно из:
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-# logwatcher_front
-# logwatcher_front
+   * `Chrome`
+   * `Edge`
+   * `Web Server`
+
+4. Запустите приложение в режиме разработки:
+
+   * В браузере Chrome:
+
+     ```bash
+     flutter run -d chrome
+     ```
+
+   * Или на web-сервере:
+
+     ```bash
+     flutter run -d web-server
+     ```
+
+---
